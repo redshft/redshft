@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8">
+<title>CSS3 Exercise</title>
+<style type="text/css"> 
+section {padding: 100px 0 0 100px; position: relative;}
+header {margin-bottom: 60px;}
+article {width: 400px; height: 400px; background: hsla(0,100%,50%,.3); border: 1px solid silver; position: absolute;transition: all .9s ease; -moz-transition: all 1s ease;}
+header:after {content:"plain"; position: relative; top: 0px; color: hsla(0,100%,50%,.7); font-size: 1.2em;}
+
+@media all and (min-width: 501px) { 
+article {border: 60px solid pink; border-radius: 50%; background:black;}
+article:hover{background: white; border-radius: 10px; border:1px solid white; margin: 60px;}
+header:after {content:"";}
+h1:before {content:"";}
+}
+h1{
+	font-family: futura;
+	text-align: center;
+	font-size: 100px;
+	   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   -webkit-text-fill-color: black;
+}
+a{
+	text-decoration: none;
+}
+article{
+	margin-left: 350px;
+}
+</style>
+</head>
+<body>
+<section>
+	<header>
+	<h1></h1>		
+	</header>	
+	<div>
+	</div>
+	<article>
+		<a href="hey.html"><h1>redshft</h1></a>
+	</article>	
+</section>
+</body>
+</html>
